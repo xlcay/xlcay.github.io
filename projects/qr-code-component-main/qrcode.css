@@ -1,0 +1,45 @@
+.backgroundstyle {
+    background-color:hsl(212, 45%, 89%);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.qrsection {
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    max-width: fit-content;
+    border-width: auto;
+    margin: auto;
+    padding: 1%;
+    margin-top: 10%;
+
+}
+
+.qrsection img {
+    max-width: 300px;
+    max-height: 300px;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.heading {
+    font-family: 'EB Garamond', serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    max-width: 200px;
+    padding-left: 20%;
+}
+
+.infotext {
+font-family: 'EB Garamond', serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    max-width: 200px;
+    justify-content: center;
+    padding-left: 20%;
+}

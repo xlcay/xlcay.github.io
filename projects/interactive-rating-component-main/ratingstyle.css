@@ -1,0 +1,186 @@
+/* class names : staricon ,
+surveyquestion ,
+feedbacktext,
+star-ratings,
+submitbtn,
+selectedrating, */
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --lightgrey: hsl(217, 12%, 63%);
+    --mediumgrey: hsl(216, 12%, 54%);
+    --darkblue: hsl(213, 19%, 18%);
+    --verydarkblue: hsl(216, 12%, 8%);
+}
+
+body {
+  background-color: var(--verydarkblue);
+  
+} 
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--verydarkblue);
+  }
+  
+  .content {
+    width: 350px;
+    height: 350px;
+    max-height: 350px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: var(--darkblue);
+    max-width: 90%;
+    min-width: 300px;
+}
+
+  
+ .staricon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(216, 12%, 54%, 0.1);
+  }
+  
+  .surveyquestion {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: var(--White);
+    font-family: "Overpass", sans-serif;
+    font-weight: 700;
+  }
+  
+  .feedbacktext {
+    font-size: 15px;
+    margin-bottom: 20px;
+    max-width: 95%;
+    color: var(--lightgrey);
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+  }
+
+  .star-rating {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+    background-color: hsl(216, 12%, 54%, 0.1);
+    outline: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    position:sticky;
+  }
+
+  .star-rating:hover {
+    background-color: var(--orange);
+  }
+
+  .star-rating:active {
+    background-color: var(--mediumgrey);
+  }
+
+  .sbmtbtn {
+      background-color: var(--orange);
+      color: #fff;
+      padding: 10px;
+      border-radius: 50px;
+      font-size: 18px;
+      cursor: pointer;
+      width: 95%;
+      margin-top: 1rem;
+      border: none;
+      font-family: "Overpass", sans-serif;
+  }
+
+  .sbmtbtn:hover {
+    background-color: white;
+    font-size: 18px;
+    color: var(--orange);
+  }
+
+  .container2 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  
+  .header2 {
+    color: var(--White);
+    font-family: "Overpass", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    height: 1rem;
+  }
+  
+  .thankyou {
+      min-width: 100px;  /* Ensures the div does not get too small */
+      max-width: 300px;  /* Ensures the div does not get too wide */
+      width: 50%;  /* Adapts to content width */
+      margin: 10px;
+      padding: 0.4em;
+      border-radius: 100px;
+      text-align: center;
+      background-color: hsl(216, 12%, 54%, 0.2);
+  }
+  
+  .thank-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .thankyou p {
+    display: inline;
+    color: var(--orange);
+    opacity: 0.8;
+  }
+  
+  .content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children horizontally in the flex container */
+    justify-content: center; /* Center children vertically in the flex container */
+    width: 400px;
+    height: 400px;
+    background-color: var(--darkblue);
+    border-radius: 20px;
+    text-align: center; /* Ensures text is centered within each child */
+}
+
+  .feedbacktext2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    max-width: 85%;
+    color: var(--lightgrey);
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+    margin: none;
+  }
+
+.buttonsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

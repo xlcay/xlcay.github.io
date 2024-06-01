@@ -1,0 +1,234 @@
+:root {
+    --black: #101820;
+    --yellow: #FEE715;
+    --teal-blue: #1995AD;
+    --lilac: #cadcfc;
+    --light-blue: rgb(161, 214, 226);
+    --light-gray: #f1f1f2;
+    --tangerine: #E3856B;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-image: linear-gradient(rgb(202, 220, 252) 20%, rgb(161, 214, 226) 50%, rgb(241, 241, 242) 90%, rgb(255, 161, 135) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainwrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+}
+
+/* FIRST DIV START*/
+.firstsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    padding: 20px;
+}
+
+.avatar3d {
+    flex: 0 1 auto;
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.firstsection>.textarea {
+    flex: 1 1 auto;
+    padding: 0 20px;
+    max-width: 90%;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+article {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* FDIV ENDS */
+
+/* SDIV START */
+.section2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.imagediv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 90%;
+    min-height: 90%;
+    border-radius: 5%;
+}
+
+.imagediv > a > img {
+    object-fit: contain;
+    width: 600px;
+    height: 600px;
+    border-radius: 5%;
+}
+
+.prev, .next {
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(52, 83, 90, 0.1);
+}
+
+/* Social links st */
+
+.social-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    opacity: 0.5;
+}
+
+.social-links a img {
+    width: 64px;
+    height: 64px;
+}
+
+/* social link e */
+
+/* Smartphones (portrait and landscape) */
+
+
+@media only screen and (max-width: 600px) {
+    .mainwrapper {
+        flex-direction: column;
+    }
+
+    h1, .textarea, article {
+        font-size: smaller;
+    }
+
+    .firstsection {
+        flex-direction: row;
+    }
+
+    .avatar3d {
+        display: flex;
+        flex-direction: row;
+        width: 82px;
+        border-radius: 50%;
+    }
+
+    .avatar3d img {
+        width: 80px;
+        height: 242px;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .social-links a img {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .section2 > a {
+        padding: 0px;
+    }
+
+    .imagediv > a > img {
+        object-fit: contain;
+        width: 280px;
+        height: 280px;
+        border-radius: 5%;
+    }
+}
+
+/* Tablets and small desktops */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .mainwrapper {
+        min-height: 100%;
+    }
+
+    .firstsection {
+        padding: 20px;
+    }
+
+    h1, .textarea, article {
+        font-size: larger;
+    }
+
+    .avatar3d img {
+        width: 120px;
+        height: 364px;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .social-links a img {
+        width: 64px;
+        height: 64px;
+    }
+
+
+    .imagediv > a > img {
+        object-fit: contain;
+        width: 480px;
+        height: 480px;
+        border-radius: 5%;
+        margin: 40px;
+    }
+}
+
+/* Large screens */
+@media only screen and (min-width: 1025px) {
+
+
+    h1, .textarea, article {
+        font-size: larger;
+    }
+}

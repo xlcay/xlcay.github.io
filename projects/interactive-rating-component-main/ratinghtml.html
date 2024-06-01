@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/projects/interactive-rating-component-main/ratingstyle.css">
+    <script src="/projects/interactive-rating-component-main/ratingjavascript.js"></script>
+    <title>Interactive Rating Component</title>
+</head>
+<body>
+    <!-- Rating State Start -->
+    <div class="container" style="display: flex;"> <!-- Ensure this is visible initially -->
+        <div class="content">
+            <div class="staricon"><img src="/projects/interactive-rating-component-main/images/icon-star.svg"></div>
+            <h1 class="surveyquestion">How did we do?</h1>
+            <p class="feedbacktext">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            <div class="buttonsection">
+                <!-- Rating Buttons -->
+                <button class="star-rating" data-value="1">1</button>
+                <button class="star-rating" data-value="2">2</button>
+                <button class="star-rating" data-value="3">3</button>
+                <button class="star-rating" data-value="4">4</button>
+                <button class="star-rating" data-value="5">5</button>
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center;"><button type="button" class="sbmtbtn">SUBMIT</button></div>
+        </div>
+    </div>
+    <!-- Rating State End -->
+
+    <!-- Thank You State Start -->
+    <div class="container2" style="display: none;"> <!-- Initially hidden -->
+        <div class="content2">
+            <div class="thank-icon"><img src="/projects/interactive-rating-component-main/images/illustration-thank-you.svg"></div>
+            <div class="thankyou">
+                <p>You selected</p>
+                <p class="selectedrating">1</p> <!-- Placeholder for JavaScript to update -->
+                <p>out of 5</p>
+            </div>
+            <h2 class="header2">Thank you!</h2>
+            <p class="feedbacktext2">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+        </div>
+    </div>
+    <!-- Thank You State End -->
+
+</body>
+</html>
